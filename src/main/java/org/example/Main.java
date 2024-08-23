@@ -1,24 +1,22 @@
 package org.example;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
+import java.util.StringTokenizer;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
-            int x = Integer.parseInt(br.readLine());
-            int nowCount = 0;
-            int prev_count = 1;
-            int i = 1;
+            String str = br.readLine();
+            Character[] reverseArray = new Character[str.length()];
+            StringBuilder sb = new StringBuilder();
 
-            while(true) {
-                nowCount = prev_count + 1;
-
-
-
-                prev_count = nowCount;
+            for (int i = str.length() - 1; i >= 0; i--) {
+                sb.append(str.charAt(i));
             }
+
+            StringTokenizer st = new StringTokenizer(sb.toString(), " ");
+
+            System.out.println(Math.max(Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken())));
         }
     }
 }

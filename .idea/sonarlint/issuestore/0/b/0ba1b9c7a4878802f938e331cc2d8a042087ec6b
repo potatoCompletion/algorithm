@@ -1,0 +1,9 @@
+
+R
+java:S1481"0Remove this unused "sameDiceNum" local variable.(¶Φ¨–ύÿÿÿÿ8γ£ΐΚ—2
+S
+java:S1481"1Remove this unused "sameQuantity" local variable.(‘έ‚ωÿÿÿÿ8γ£ΐΚ—2
+G	java:S106"+Replace this use of System.out by a logger.(»νι8δ£ΐΚ—2
+;
+java:S2178"Correct this "|" to "||".(Έχ£όÿÿÿÿ8δ£ΐΚ—2
+G	java:S106"+Replace this use of System.out by a logger.(Ρ’ω“8δ£ΐΚ—2

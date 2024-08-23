@@ -1,12 +1,26 @@
-//  두 수 비교하기
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+public class Main {
+    public static void main(String[] args) throws IOException {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+            StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+            int A = Integer.parseInt(st.nextToken());
+            int B = Integer.parseInt(st.nextToken());
 
-class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+            if (A > B) {
+                System.out.println(">");
+            }
 
+            if (A < B) {
+                System.out.println("<");
+            }
+
+            if (A == B) {
+                System.out.println("==");
+            }
+        }
     }
 }
