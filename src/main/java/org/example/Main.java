@@ -1,22 +1,38 @@
 package org.example;
 
 import java.io.*;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
-            String str = br.readLine();
-            Character[] reverseArray = new Character[str.length()];
-            StringBuilder sb = new StringBuilder();
+            int n = Integer.parseInt(br.readLine());
 
-            for (int i = str.length() - 1; i >= 0; i--) {
-                sb.append(str.charAt(i));
+            int[] A = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+            Arrays.sort(A);
+
+            int[] B = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+            List<Integer> BList = new LinkedList<>();
+
+            for (int i : B) {
+                BList.add(i);
             }
 
-            StringTokenizer st = new StringTokenizer(sb.toString(), " ");
+            int sum = 0;
+            for (int i = 0; i < n; i++) {
+                int maxIndex = 0;
 
-            System.out.println(Math.max(Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken())));
+                for (int j : BList) {
+                    if (BList.get(maxIndex) < j) {
+                        maxIndex = BList.indexOf(j);
+                    }
+                }
+
+                sum += A[i] * BList.get(maxIndex);
+                BList.remove(maxIndex);
+            }
+
+            System.out.println(sum);
         }
     }
 }
