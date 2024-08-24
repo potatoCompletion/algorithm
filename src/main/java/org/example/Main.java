@@ -1,38 +1,28 @@
 package org.example;
 
 import java.io.*;
-import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
-            int n = Integer.parseInt(br.readLine());
+            int x = Integer.parseInt(br.readLine());
+            int count = 0;
 
-            int[] A = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-            Arrays.sort(A);
+            for (int i = 1; i <= x; i++) {
+                for (int j = 1; j <= i; j++) {
+                    count++;
 
-            int[] B = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-            List<Integer> BList = new LinkedList<>();
-
-            for (int i : B) {
-                BList.add(i);
-            }
-
-            int sum = 0;
-            for (int i = 0; i < n; i++) {
-                int maxIndex = 0;
-
-                for (int j : BList) {
-                    if (BList.get(maxIndex) < j) {
-                        maxIndex = BList.indexOf(j);
+                    if (count == x) {
+                        if (i % 2 == 0) {
+                            System.out.println(j + "/" + (i - j + 1));
+                            return;
+                        } else {
+                            System.out.println((i - j + 1) + "/" + j);
+                            return;
+                        }
                     }
                 }
-
-                sum += A[i] * BList.get(maxIndex);
-                BList.remove(maxIndex);
             }
-
-            System.out.println(sum);
         }
     }
 }

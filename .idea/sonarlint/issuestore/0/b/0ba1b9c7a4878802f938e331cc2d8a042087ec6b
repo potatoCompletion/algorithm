@@ -1,9 +1,7 @@
 
-R
-java:S1481"0Remove this unused "sameDiceNum" local variable.(¶Ö¨–ýÿÿÿÿ8ã£ÀÊ—2
-S
-java:S1481"1Remove this unused "sameQuantity" local variable.(‘Ý‚Œùÿÿÿÿ8ã£ÀÊ—2
-G	java:S106"+Replace this use of System.out by a logger.(Ÿ»íé8ä£ÀÊ—2
-;
-java:S2178"Correct this "|" to "||".(Ÿ¸÷£üÿÿÿÿ8ä£ÀÊ—2
-G	java:S106"+Replace this use of System.out by a logger.(Ñ’ù“8ä£ÀÊ—2
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ËÃö8øßžó—2
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³¹ûîøÿÿÿÿ8øßžó—2
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ñ‚w8ùßžó—2
+K
+java:S5413 ")Verify that "remove()" is used correctly.(õçÇèþÿÿÿÿ8šàžó—2
+G	java:S106#"+Replace this use of System.out by a logger.(‚¨Ö§8œàžó—2
