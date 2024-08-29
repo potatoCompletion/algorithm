@@ -1,28 +1,28 @@
 package org.example;
 
-import java.io.*;
+import java.awt.print.Pageable;
+import java.io.IOException;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
-            int x = Integer.parseInt(br.readLine());
-            int count = 0;
+        String[] participant = new String[0];
+        String[] completion = new String[0];
 
-            for (int i = 1; i <= x; i++) {
-                for (int j = 1; j <= i; j++) {
-                    count++;
+        Map<String, Integer> participantMap = new HashMap<String, Integer>();
 
-                    if (count == x) {
-                        if (i % 2 == 0) {
-                            System.out.println(j + "/" + (i - j + 1));
-                            return;
-                        } else {
-                            System.out.println((i - j + 1) + "/" + j);
-                            return;
-                        }
-                    }
-                }
+        for (String name : participant) {
+            participantMap.put(name, participantMap.getOrDefault(name, 0) + 1);
+        }
+
+        for (String name : completion) {
+            if (!participantMap.containsKey(name)) {
+
             }
         }
+
+        String answer = "";
+        return answer;
     }
 }
