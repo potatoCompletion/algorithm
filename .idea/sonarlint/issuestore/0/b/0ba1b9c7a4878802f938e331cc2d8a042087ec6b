@@ -1,7 +1,8 @@
 
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ËÃö8øßžó—2
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³¹ûîøÿÿÿÿ8øßžó—2
-l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ñ‚w8ùßžó—2
-K
-java:S5413 ")Verify that "remove()" is used correctly.(õçÇèþÿÿÿÿ8šàžó—2
-G	java:S106#"+Replace this use of System.out by a logger.(‚¨Ö§8œàžó—2
+v
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(éÊ‘„8´Á¨˜™2
+€
+java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "answer".(þùŽ›þÿÿÿÿ8µÁ¨˜™2
+‰
+java:S1130	"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(œû¿Ø8ÀÁ¨˜™2
+E	java:S108")Either remove or fill this block of code.(Ïªø¯8ÂÁ¨˜™2

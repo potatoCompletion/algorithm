@@ -38,3 +38,5 @@ G.idea/sonarlint/issuestore/9/9/99a48021c223f69a71a31b2556a4e2bfc57d63b5,b\1\b1
 Q.idea/sonarlint/securityhotspotstore/6/4/649c7eeb869880f8c4a2596b64434b91abec99bd,b\9\b9df1dfdeb429136ced3faf437e672eec0280a05
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+O
+Programmers/폰켓몬/Main.java,d\a\da55be9347daecdcb2297f753773b8909a42f523
