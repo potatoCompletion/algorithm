@@ -1,8 +1,6 @@
 
-v
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(éÊ‘„8´Á¨˜™2
-€
-java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "answer".(şù›şÿÿÿÿ8µÁ¨˜™2
-‰
-java:S1130	"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(œû¿Ø8ÀÁ¨˜™2
-E	java:S108")Either remove or fill this block of code.(Ïªø¯8ÂÁ¨˜™2
+s
+java:S1128"QRemove this unnecessary import: java.lang classes are always implicitly imported.(ãø©Æşÿÿÿÿ8ÎÌ÷›2
+J	java:S108	")Either remove or fill this block of code.(€ÿ¥ÿÿÿÿÿ8­úÃ‚›2
+C
+java:S1128"&Remove this unused import 'java.util'.(Î€ŒÙ8Â­ø›2
