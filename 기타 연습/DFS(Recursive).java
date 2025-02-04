@@ -1,8 +1,5 @@
-package org.example;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
 //    0
 //  1   2
@@ -31,22 +28,13 @@ class Main {
         DFS(0);
     }
 
-    public static void DFS(int start) {
-        Stack<Integer> stack = new Stack<>();
-        stack.push(start);
+    public static void DFS(int node) {
+        visited[node] = true;
+        System.out.print(node + " ");
 
-        while (!stack.isEmpty()) {
-            int node = stack.pop();
-
-            if (!visited[node]) {
-                visited[node] = true;
-                System.out.print(node + " ");
-
-                for (int neighbor : graph[node]) {
-                    if (!visited[neighbor]) {
-                        stack.push(neighbor);
-                    }
-                }
+        for(int nodeNum : graph[node]) {
+            if(!visited[nodeNum]) {
+                DFS(nodeNum);
             }
         }
     }
