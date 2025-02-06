@@ -1,5 +1,3 @@
-package org.example;
-
 import java.sql.Array;
 import java.util.*;
 
