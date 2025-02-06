@@ -1,5 +1,3 @@
-package org.example;
-
 class Main {
     static int count = 0;
 
